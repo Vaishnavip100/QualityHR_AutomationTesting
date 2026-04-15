@@ -78,14 +78,6 @@ OrangeHRM-Automation/
 
 ## ⚙️ Configuration
 
-Update the following file:
-
-```
-src/test/resources/config.properties
-```
-
-Example:
-
 ```
 baseUrl=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 browser=chrome
