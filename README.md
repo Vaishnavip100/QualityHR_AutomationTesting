@@ -44,8 +44,6 @@ OrangeHRM-Automation/
 │   │       ├── ExcelUtil.java       → Handles test data from Excel
 │   │       └── ExtentManager.java   → Manages Extent Reports
 │   │
-│   ├── main/resources/          → (Currently unused / for future configs)
-│
 │   ├── test/java/
 │   │   ├── base/                → Test setup and teardown
 │   │   │   └── BaseTest.java    → WebDriver initialization
