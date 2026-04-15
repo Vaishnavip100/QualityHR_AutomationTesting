@@ -25,7 +25,7 @@ public class LeaveTest extends BaseTest {
         LeavePage leave = new LeavePage(getDriver());
         leave.goToApply();
 
-//        Assert.assertTrue(true, "Leave page loaded");
+        Assert.assertTrue(leave.isLeavePageDisplayed(), "Leave page not loaded");
     }
 
     //Apply Leave
@@ -46,13 +46,9 @@ public class LeaveTest extends BaseTest {
         }
 
         leave.applyLeave("2026-04-20", "2026-04-21");
-
         leave.goToMyLeave();
 
-        Assert.assertTrue(
-            leave.isLeaveStatusDisplayed(),
-            "Leave not visible in list"
-        );
+        Assert.assertTrue(leave.isLeaveStatusDisplayed(),"Leave not visible in list");
     }
 
     //Verify Leave Status
@@ -80,9 +76,7 @@ public class LeaveTest extends BaseTest {
 
         LeavePage leave = new LeavePage(getDriver());
         leave.goToApply();
-
         leave.selectLeaveType();
-
         leave.applyLeave("2023-01-01", "2023-01-02");
 
         Assert.assertTrue(leave.isWarningDisplayed(),"Warning not shown for past date");
